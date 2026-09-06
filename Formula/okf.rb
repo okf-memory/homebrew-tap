@@ -6,15 +6,15 @@ class Okf < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/okf-memory/okf-agent-memory/releases/download/v#{version}/okf-darwin-arm64"
-      sha256 "d7411eb7d473e21ec93a1923a1bcece2794b434f8d077894ae1f2f352021f929"
+      url "https://github.com/okf-memory/okf-agent-memory/releases/download/v0.1.0/okf-darwin-arm64"
+      sha256 "35d758d79ce9a06de3bdd750fe68fca7cb7abb9852c18e32237c26cf97dc18d5"
 
       def install
         bin.install "okf-darwin-arm64" => "okf"
       end
     else
-      url "https://github.com/okf-memory/okf-agent-memory/releases/download/v#{version}/okf-darwin-amd64"
-      sha256 "761d2111b49703dfd6288338e1d1d542dd69a43a5eed2475987826d938d831ff"
+      url "https://github.com/okf-memory/okf-agent-memory/releases/download/v0.1.0/okf-darwin-amd64"
+      sha256 "8f9d670a5db79602dfb5e546775f50477e27867d84ebd57bc8e56b55a42d248d"
 
       def install
         bin.install "okf-darwin-amd64" => "okf"
@@ -24,15 +24,15 @@ class Okf < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/okf-memory/okf-agent-memory/releases/download/v#{version}/okf-linux-arm64"
-      sha256 "ff6b1ce0a3b2c2acc80610fca765f1c5c0324caa05ceccc49da721afcec9c3a5"
+      url "https://github.com/okf-memory/okf-agent-memory/releases/download/v0.1.0/okf-linux-arm64"
+      sha256 "cb8672da1be0265534673555f5656288e043b4e9d41ade9bf3022b6d44e545e5"
 
       def install
         bin.install "okf-linux-arm64" => "okf"
       end
     else
-      url "https://github.com/okf-memory/okf-agent-memory/releases/download/v#{version}/okf-linux-amd64"
-      sha256 "d04bbaa37940470aebc9f249f46b0dec42cae9d142aafabf012f206c7a5176fb"
+      url "https://github.com/okf-memory/okf-agent-memory/releases/download/v0.1.0/okf-linux-amd64"
+      sha256 "3634adc6c72122a6ef81a2fb3b948a48393920ccb6e6823a47f13186261ce6eb"
 
       def install
         bin.install "okf-linux-amd64" => "okf"
