@@ -1,20 +1,20 @@
 class Okf < Formula
   desc "Domain-neutral, Git-native persistent project memory for AI agents (OKF v0.2)"
   homepage "https://github.com/okf-memory/okf-agent-memory"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/okf-memory/okf-agent-memory/releases/download/v0.7.0/okf-darwin-arm64"
-      sha256 "009d70ebf067e19463fe238eb380109f64b270c3cc194ae6a53f25d31cf187f9"
+      url "https://github.com/okf-memory/okf-agent-memory/releases/download/v0.7.1/okf-darwin-arm64"
+      sha256 "9489d8bd2a6167299319d21bee029e6f75e50352c0334a240309b329bedd9e98"
 
       def install
         bin.install "okf-darwin-arm64" => "okf"
       end
     else
-      url "https://github.com/okf-memory/okf-agent-memory/releases/download/v0.7.0/okf-darwin-amd64"
-      sha256 "5e6f4185748865241f5d156a88f5935dc57142054f6560212b1a5de6eb1367b3"
+      url "https://github.com/okf-memory/okf-agent-memory/releases/download/v0.7.1/okf-darwin-amd64"
+      sha256 "fdcd6b97fc2db677af13ea89741261c205de13cfd4ca9f537306238116653640"
 
       def install
         bin.install "okf-darwin-amd64" => "okf"
@@ -24,15 +24,15 @@ class Okf < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/okf-memory/okf-agent-memory/releases/download/v0.7.0/okf-linux-arm64"
-      sha256 "ad6266e37b85d69c66488e8dfe3af051b6d44d845fad94f25820d52df4db8d39"
+      url "https://github.com/okf-memory/okf-agent-memory/releases/download/v0.7.1/okf-linux-arm64"
+      sha256 "f58f9bfe310333a166c8ae0aae61338a8983af8a8d4c392692d2595ba4497814"
 
       def install
         bin.install "okf-linux-arm64" => "okf"
       end
     else
-      url "https://github.com/okf-memory/okf-agent-memory/releases/download/v0.7.0/okf-linux-amd64"
-      sha256 "e44bc08ee2b150871d69182bcfe04712669be4196566cde65d77620b2e8c43f1"
+      url "https://github.com/okf-memory/okf-agent-memory/releases/download/v0.7.1/okf-linux-amd64"
+      sha256 "59bd393e02058c33452e02415f32ffd466441e9e1c12558627bb11c842397611"
 
       def install
         bin.install "okf-linux-amd64" => "okf"
